@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Quiz</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="warning">
+  <div *ngIf = "questions">
+    <p class="text-center">Question {{counter + 1}}</p>
+
+      
+        <p class="text-center" >{{currentQuestion}}</p>
+    
+    <div class="answers">
+      <ion-button class=" answer_button ion-text-wrap" shape = "round " expand="full" color="secondary" (click)="checkAnswer(option)" *ngFor="let option of options">{{option}}</ion-button>
+      <!-- <ion-button expand="full" color="secondary" (click)="checkAnswer()">1984</ion-button>
+      <ion-button expand="full" color="secondary" (click)="checkAnswer()">2006</ion-button>
+      <ion-button expand="full" color="secondary" (click)="checkAnswer()">2001</ion-button> -->
+    </div>
+
+  </div>
+
+
+</ion-content>

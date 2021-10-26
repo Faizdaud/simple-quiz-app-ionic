@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Score</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Hi, {{participant.name}}</ion-card-subtitle>
+      <ion-card-title>Your Total Score: {{score}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content >
+      <p>What would you like to do?</p>
+      <!-- <ion-item class="item-background-color" lines="none" class="score-buttons  "> -->
+        <diV class="score-buttons ">
+          <ion-button color="secondary" routerLink="/home">Home</ion-button>
+          <ion-button color="secondary" routerLink="/high-score">High Score</ion-button>
+        </diV>
+     
+      <!-- </ion-item> -->
+      
+    </ion-card-content>
+  </ion-card>
+  
+ 
+</ion-content>

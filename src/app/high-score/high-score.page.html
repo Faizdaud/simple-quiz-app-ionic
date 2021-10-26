@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>High-Score</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <h1>Hi,</h1>
+    <p *ngFor="let score of scores">your score is = {{scores}}</p>
+    <ion-button expand="full" slot="start" color="secondary" (click)="getHighScore()">Home</ion-button>
+  </div>
+
+
+ 
+      <ion-label>
+        Ionic Table using Ionic grid component
+      </ion-label>
+ 
+  
+
+    <!-- <ion-grid class="ion-margin">
+      <ion-row>
+        <ion-col>S.No</ion-col>
+        <ion-col>Name</ion-col>
+        <ion-col>Gender</ion-col>
+        <ion-col>Country</ion-col>
+      </ion-row>
+      <ion-row *ngFor="let student of students; index as i">
+        <ion-col>{{ i + 1 }}</ion-col>
+        <ion-col>{{ student.name }}</ion-col>
+        <ion-col>{{ student.gender }}</ion-col>
+        <ion-col>{{ student.country }}</ion-col>
+      </ion-row>
+    </ion-grid> -->
+  
+
+ 
+</ion-content>

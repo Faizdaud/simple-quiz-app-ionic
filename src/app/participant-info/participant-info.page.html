@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Participant Info</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="contianer">
+    <ion-item lines="none">
+      <p>Fill in your Information:</p>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">Name</ion-label>
+      <ion-input  [(ngModel)]="participantInfo.name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Age</ion-label>
+      <ion-input  [(ngModel)]="participantInfo.age"></ion-input>
+    </ion-item>
+    <ion-button expand="block" fill="outline" (click)="startPressed()"> Start Quiz</ion-button>
+   
+  </div>
+</ion-content>
+
+
+
+<!-- <ion-label position="floating" [(ngModel)]="participantInfo.age"
+(click)="startPressed()" -->

@@ -1,0 +1,29 @@
+
+ion-card{
+   background-color: burlywood;
+    text-align: center;
+    border: 2px solid black;
+
+    ion-card-subtitle{
+        font-size: 1.5rem;
+    }
+
+    ion-card-title{
+        color: white;
+        font-weight: 600;
+    }
+
+    p{
+        color:green;
+    }
+
+    .score-buttons{
+        // border: 2px solid black;
+    
+        ion-button{
+            // width: 50%;
+            border-radius: 20px;
+            // border: 2px solid red;
+        }
+    }
+}
